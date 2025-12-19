@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Palatino&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        // Redirect www to root domain
+        (function() {
+            if (window.location.hostname.startsWith('www.')) {
+                window.location.href = window.location.protocol + '//' + window.location.hostname.replace(/^www\./, '') + window.location.pathname + window.location.search + window.location.hash;
+            }
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
